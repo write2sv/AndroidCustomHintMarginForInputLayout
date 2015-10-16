@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="50dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/description"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp">
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/without_custom_layout"
+            android:background="@drawable/flat_style"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <custominputlayout.work.shaggy.com.custominputlayoutdemo.view.CustomTextInputLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/with_custom_layout"
+            android:background="@drawable/flat_style"/>
+    </custominputlayout.work.shaggy.com.custominputlayoutdemo.view.CustomTextInputLayout>
+
+    <custominputlayout.work.shaggy.com.custominputlayoutdemo.view.CustomTextInputLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:hintBottomMargin="60">
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/with_custom_layout_and_attribute"
+            android:background="@drawable/flat_style"/>
+    </custominputlayout.work.shaggy.com.custominputlayoutdemo.view.CustomTextInputLayout>
+
+
+</LinearLayout>
